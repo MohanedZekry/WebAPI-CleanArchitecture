@@ -2,12 +2,12 @@
 using Microsoft.AspNetCore.Mvc;
 using PlacementTest.Application.Features.TestTakersFeatures;
 using PlacementTest.Application.Features.TestTakersFeatures.Get;
+using PlacementTest.WebAPI.Controllers.Base;
 
 namespace PlacementTest.WebAPI.Controllers
 {
-    [ApiController]
-    [Route("test-taker")]
-    public class TestTakerController : ControllerBase
+
+    public class TestTakerController : BaseController
     {
         private readonly IMediator _mediator;
 
